@@ -1,0 +1,61 @@
+<!-- 
+		Name: Luke Brown
+		Date: 7/21/2024
+		Class: CSCI2447, Javascript Fundamentals
+		Project 4
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Jae's Jazzy Jab</title>
+    <link href="css/game.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/jae_favicon.png" />
+    <meta charset ="utf-8">
+  </head>
+  <body>
+
+   <div id="wrapper">   
+	<div id="content">
+        <div id="leftside" class="col1">
+            <h1>Jae's Jazzy Jab</h1>
+
+            <p id="welcome"></p>
+		
+            <p id="directions">Click on the images to earn points!</p>
+            
+            <button type="button" id="start_button">Start!</button>        
+        </div>
+
+        <br/>
+
+    <div class="controlA">
+
+      <p id="timer">30 seconds left</p>
+      <p id="scoreText"><span id="score">0 pts</span></p>
+
+    </div>
+		 
+		<div id="gamespace">
+			
+		
+		</div>
+		
+	</div><!--ends content div -->
+       
+</div>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/my_scripts.js"></script>
+<script>
+  // Getting user's name to add to welcome text
+  let firstName = prompt("What is your first name?");
+  document.getElementById("welcome").innerHTML = `Welcome to the game, ${firstName}!`;
+</script>
+
+<footer id="footer"></footer>
+
+</body>
+</html>
+<!-- 10/28/21 -->

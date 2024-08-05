@@ -1,0 +1,100 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+html, body {
+	
+	margin: 0 auto;
+	font-family: sans-serif;
+    background-color:#ca633e;
+    color: #dcdac1;
+    font-family: "Pixelify Sans", sans-serif;
+    background-image: url(../img/background.png);
+}
+	
+h1 {
+	margin: 2px;
+    color: #dcdac1;
+    font-family: "Jacques Francois", sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+}
+	
+button {
+    padding: 8px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.5em;
+   }
+
+#content {
+	padding: 20px;
+    margin: 0 auto;
+    width: 700px;
+}
+	
+
+#gamespace {
+	margin: 20px;
+    height: 350px;
+    width: 600px;
+	background-color: #dcdac1;
+	border: 2px solid #dcdac1; 
+    margin: auto;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+.col1{
+    text-align:center;
+    width: 550px;
+    min-width: 400px;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 900px){
+    #content{
+        display: inline-block;
+    }
+    .col1{
+        margin:0 auto;
+    }
+}
+
+.image {
+    width: 150px;
+}
+
+#directions, #score, #welcome {
+    font-size: 1.5em;
+}
+
+#scoreText {
+    text-align: right;
+    flex: 1;
+}
+
+#timer {
+    display: none;
+    text-align: left;
+    flex: 1;
+    font-size: 1em;
+}
+
+.controlA {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+div #gamespace img {
+    position: absolute;
+}
+
+div #gamespace {
+    position: relative;
+}
+
+footer {
+    font-family: sans-serif;
+}
